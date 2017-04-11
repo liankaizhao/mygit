@@ -1,0 +1,53 @@
+var sdw_hw = new sdw_hw({
+    mainObj: $("#sdw-wrap"),
+    containerObj: $(".sdw-container"),
+    animateObj: ".sdw-animate",
+    easing: "easeIn",
+    topHalf: 0.5,
+    bottomHalf: 0.5,
+    single: [],
+    addEvent: function (self) {
+        self.addClass("active");
+    },
+    removeEvent: function (self) {
+        self.removeClass("active");
+    },
+    imgCompEvent: function () {
+        sdw_hw.setHeight();
+    }
+});
+$(function () {
+    fontResize();
+    $(window).resize(function () {
+        fontResize();
+    });
+
+});
+function fontResize() {
+    var sdw_width = $("#sdw-wrap").width();
+    var w = $("#sdw-wrap").width() / 1920;
+    var fs = w;
+    var lh = w;
+    var lh2 = w;
+
+    if (fs < 0.7) {
+        fs = 0.7;
+    }
+    if (w < 0.6) {
+        lh = 0.6;
+    }
+     $(".sdw-container").css({"font-size": 30 * fs + "px"});
+    //    公共样式
+    $(".title").css({"font-size": 39 * fs + "px"});
+    $(".title30").css({"font-size": 30 * fs + "px"});
+    $(".title60").css({"font-size": 60 * fs + "px"});
+    $(".ps").css({"font-size": 18 * fs + "px"});
+    $(".line").css({"margin-bottom":30* w,"margin-top":35* w, "font-size": 45 * fs + "px"});
+    $(".ctx").css({"font-size": 20 * fs + "px","margin-bottom":60* w});
+    $(".icons").css({"margin-bottom":55* w});
+
+    $(".spec-css").each(function () {
+        var _this = $(this);
+        $(this).css("margin-bottom", _this.data("mb") * w + "px");
+    });
+}

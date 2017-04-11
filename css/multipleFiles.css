@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.prod{
+	width:auto;
+	height:auto;
+	background-color:#13D123;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+
+.inputStyle{
+	background-color:#2EE70A;
+	color:white;
+	width:20px;
+	height:8px;
+	border-radius:6px;
+}

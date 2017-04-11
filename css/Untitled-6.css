@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+#Formlogin{
+	background-color:#E5B2E8;
+}
+
+#tit{
+	background-color:#A7B3EC;
+	font:微软雅黑；
+	font-size:large;
+	color:black;
+}
+
+.login_iput{
+ width:100px;
+ height:40px;
+}
+
+.btn80{
+	border-bottom-left-radius:6px;
+	font:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:large;
+	background-color:#5CF13E;
+	color:white;
+}
+
+

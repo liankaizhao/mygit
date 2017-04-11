@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image:url(../img/582648239f8b0893dae10878876ed241.jpg);}
+.navstyle::before{
+	content:url(../img/logo.png);
+	}
+	
+.ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	backgrund-color:white;
+	overflow:hidden;}
+
+li{
+	float:left;}
+
+li a,.dropbtn{
+	text-decoration:none;
+	/*backgroung-color:white;*/
+	color:black;
+	text-align:center;
+	padding:14px 16px;
+	display:inline-block;}/*缺少显示方式*/
+ 
+ li a:hover,.dropdown:hover .dropbtn{
+	 background-color:#1C6AF4;}
+	 
+li .dropdown{
+		display:inline-block;}
+
+dropdown-content{
+	position:absolute;
+	background-color:white;
+	/*color:black;*/
+	display:none;
+	min-width:160px;/*需加入最小尺寸*/
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+dropdown-content a{
+	display:block;/*需改成block，不是inline-block*/
+	text-decoration:none;
+	padding:12px 16px;
+	color:black;
+	text-align:left;
+	
+	}
+
+dropdown-content a:hover {
+	background-color:#1551F1;}
+
+.dropdown:hover .dropdown-content{/*需改成block*/
+	display:block;}
+
+footer{
+	text-align:center;}
+	
+	
+
